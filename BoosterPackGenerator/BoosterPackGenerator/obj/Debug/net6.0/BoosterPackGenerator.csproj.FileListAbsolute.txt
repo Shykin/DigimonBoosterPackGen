@@ -1,0 +1,16 @@
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\bin\Debug\net6.0\BoosterPackGenerator.exe
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\bin\Debug\net6.0\BoosterPackGenerator.deps.json
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\bin\Debug\net6.0\BoosterPackGenerator.runtimeconfig.json
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\bin\Debug\net6.0\BoosterPackGenerator.dll
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\bin\Debug\net6.0\BoosterPackGenerator.pdb
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\obj\Debug\net6.0\BoosterPackGenerator.csproj.AssemblyReference.cache
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\obj\Debug\net6.0\BoosterPackGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\obj\Debug\net6.0\BoosterPackGenerator.AssemblyInfoInputs.cache
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\obj\Debug\net6.0\BoosterPackGenerator.AssemblyInfo.cs
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\obj\Debug\net6.0\BoosterPackGenerator.csproj.CoreCompileInputs.cache
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\obj\Debug\net6.0\BoosterPackGenerator.dll
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\obj\Debug\net6.0\refint\BoosterPackGenerator.dll
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\obj\Debug\net6.0\BoosterPackGenerator.pdb
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\obj\Debug\net6.0\BoosterPackGenerator.genruntimeconfig.cache
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\obj\Debug\net6.0\ref\BoosterPackGenerator.dll
+C:\Users\shyki\Documents\GitHub\DigimonBoosterPackGen\BoosterPackGenerator\BoosterPackGenerator\bin\Debug\net6.0\BT09-ParseList.csv
