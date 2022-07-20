@@ -8,19 +8,38 @@ namespace BoosterPackGenerator // Note: actual namespace depends on the project 
         {
             string[] fileLines = System.IO.File.ReadAllLines("BT09-ParseList.csv");
             List<CardFileRow> cardDefs = fileLines.Select(s => new CardFileRow(s.Split(',')[0].Trim(), s.Split(',')[1].Trim())).ToList();
-
             BoosterPackDefinition packDef = new BoosterPackDefinition(7, 3, 1, 1);
+            BoosterBoxDefinition boxDef = new BoosterBoxDefinition(168, 72, 35, 7, 2);
+            BoosterCardPicker cardPicker = new BoosterCardPicker(cardDefs, boxDef);
+
             int packCount = 6;
-            List<string> cards = new List<string>();
+            List<CardFileRow> cards = new List<CardFileRow>();
 
             for(int i = 0; i < packCount; i++)
             {
+                //First get the guarrenteed cards for each pack
                 for(int c = 0; c < packDef.Commons; c++)
                 {
-
+                    cards.Add(cardPicker.GetCardByRarity(cardDefs, CardRarities.Common));
                 }
+                for(int u = 0; u < packDef.Uncommons; u++)
+                {
+                    cards.Add(cardPicker.GetCardByRarity(cardDefs, CardRarities.Uncommon));
+                }
+                for(int r = 0; r < packDef.Rares; r++)
+                {
+                    cards.Add(cardPicker.GetCardByRarity(cardDefs, CardRarities.Rare));
+                }
+                cards.Add(cardPicker.GetCardByRarity(cardDefs, cardPicker.GetRandomCardRarityByBoxDef(false)));
             }
 
+            var groupedCards = cards.GroupBy(c => c.CardCode);
+            foreach(var group in groupedCards)
+            {
+                string outputGroup = group.Count() + " " + group.Key;
+                Console.WriteLine(outputGroup);
+            }
+            Console.ReadKey();
             //First loop the number of packs
             //Then in each pack you need to pick from the pool of Commons, Uncommons, and Rares based on the definition
             //The pick card should be "PickByRarity" you pick a rarity and it grabs a random card from the list loaded by the CSV
@@ -34,23 +53,6 @@ namespace BoosterPackGenerator // Note: actual namespace depends on the project 
             
 
 
-        }
-
-        public static CardFileRow GetCardByRarity(List<CardFileRow> cardDefs, string rarity)
-        {
-            return null;
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="rares">Total rares per box</param>
-        /// <param name="superRares">Total Super Rares per box</param>
-        /// <param name="secretRares">Total Secret Rares per box</param>
-        /// <param name="allowAlternativeArts">If true include picking an alterntive art instead of a secret rare</param>
-        public static string GetRandomCardRarityByBoxDef(int rares, int superRares, int secretRares, bool allowAlternativeArts)
-        {
-            return CardRarities.Common;
         }
     }
 }
